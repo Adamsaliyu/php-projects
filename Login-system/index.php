@@ -32,5 +32,12 @@
 </html>
 
 <?php
-    echo "HII";
+
+    $name = $_POST["username"];
+
+
+    if(empty($_POST["username"])){
+        echo"Enter your name";
+
+    }
 ?>
