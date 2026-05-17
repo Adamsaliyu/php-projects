@@ -1,0 +1,12 @@
+#Login Page 
+
+1- Accept user input and password
+2- check if fields are empty
+3- verify credentials
+4-if correct start session 
+    show "welcome user"
+5- if wrong
+    show wrong massage
+
+    
+        

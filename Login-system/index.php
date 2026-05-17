@@ -17,7 +17,7 @@
                 <input type="password" name="password">
                 <br>
 
-                <input type="submit" name="Sign up" id="Submit-btn">
+                <input type="submit" name="signup" id="Submit-btn">
 
             </form>
         </div>
@@ -27,17 +27,18 @@
 </html>
 
 <?php
+    if(isset($_POST["signup"])){
+        
+        $username = $_POST["username"];
+        $password = $_POST["password"];
 
-    $name = $_POST["username"];
-    $userName = "muhammad";
-    $userPassword = 11122;
+        if(empty($username)){
+            echo"username is empty";
+        }
+        elseif(empty($password)){
+            echo"password is empty";
+        }
 
-
-    if(empty($_POST["username"])){
-        echo"Fields cannot be empty";
     }
 
-    if(isset( $name )){
-
-    }
 ?>
