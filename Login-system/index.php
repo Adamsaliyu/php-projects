@@ -1,3 +1,10 @@
+<?php
+session_start();
+$_SESSION["username"] = "muhammad";
+$_SESSION["password"] = 1234;
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,19 +46,21 @@
             echo"password is empty";
         }
 
-        if($username == "muhammad"){
-            echo"welcome {$username}";
+        if($username == $_SESSION["username"]){
+            echo"WELCOME {$username}" ."<br>" ;
         }
         else{
             echo"The username is not correct";
         }
 
-        if($password == 1234 ){
-            
+        if( $password == $_SESSION["password"] ){
         }
         else{
-            echo"Wrong password";
+            echo"Password is not correct";
         }
+
+        
+         
     }
 
 ?>
