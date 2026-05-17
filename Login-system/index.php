@@ -1,7 +1,8 @@
 <?php
 session_start();
 $_SESSION["username"] = "muhammad";
-$_SESSION["password"] = 1234;
+$password = 1234;
+$_SESSION["password"] = password_hash(1234, PASSWORD_DEFAULT);
 
 ?>
 
@@ -37,13 +38,12 @@ $_SESSION["password"] = 1234;
     if(isset($_POST["signup"])){
         
         $username = htmlspecialchars(trim($_POST["username"]) );
-        $password = $_POST["password"];
+        $password = trim($_POST["password"]) ;
 
-        if(empty($username)){
-            echo"username is empty";
-        }
-        elseif(empty($password)){
-            echo"password is empty";
+        if(empty($username) ||
+            empty($password)){
+            
+            echo"Input must be filled";
         }
         else{
             //login check
