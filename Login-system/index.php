@@ -29,7 +29,7 @@
 <?php
     if(isset($_POST["signup"])){
         
-        $username = $_POST["username"];
+        $username = htmlspecialchars(trim($_POST["username"]) );
         $password = $_POST["password"];
 
         if(empty($username)){
@@ -39,6 +39,19 @@
             echo"password is empty";
         }
 
+        if($username == "muhammad"){
+            echo"welcome {$username}";
+        }
+        else{
+            echo"The username is not correct";
+        }
+
+        if($password == 1234 ){
+            
+        }
+        else{
+            echo"Wrong password";
+        }
     }
 
 ?>
