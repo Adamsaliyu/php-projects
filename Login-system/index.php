@@ -40,35 +40,22 @@ $_SESSION["password"] = password_hash(1234, PASSWORD_DEFAULT);
         $username = htmlspecialchars(trim($_POST["username"]) );
         $password = trim($_POST["password"]) ;
 
-        if(empty($username) ||
-            empty($password)){
-            
-            echo"Input must be filled";
+        if(empty($username)){
+            echo"Username is empty";
+        }
+        elseif(empty($password)){
+            echo"Password is empty";
         }
         else{
-            //login check
-        }
 
-        if($username == $_SESSION["username"] &&
+            if($username == $_SESSION["username"] &&
             $password == $_SESSION["password"]){
-                
-            echo"WELCOME {$username}" ."<br>";
-            echo"Login successful" ."<br>";
+                echo"Login successful" ."<br>";
+            }
+            else{
+                echo"invalid username or password";
+            }
         }
-        elseif($username == $_SESSION["username"] &&
-            $password != $_SESSION["password"] ){
-
-            echo"Wrong password";
-        }
-        elseif($username != $_SESSION["username"] &&
-            $password == $_SESSION["password"]){
-            
-            echo"Invalid username";
-        }
-        else{
-            echo"Login faild";
-        }
-         
     }
 
 ?>
