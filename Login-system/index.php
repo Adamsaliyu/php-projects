@@ -46,23 +46,28 @@ $_SESSION["password"] = 1234;
             echo"password is empty";
         }
         else{
-            //login
+            //login check
         }
 
-        if($username == $_SESSION["username"]){
-            echo"WELCOME {$username}" ."<br>" ;
+        if($username == $_SESSION["username"] &&
+            $password == $_SESSION["password"]){
+                
+            echo"WELCOME {$username}" ."<br>";
+            echo"Login successful" ."<br>";
+        }
+        elseif($username == $_SESSION["username"] &&
+            $password != $_SESSION["password"] ){
+
+            echo"Wrong password";
+        }
+        elseif($username != $_SESSION["username"] &&
+            $password == $_SESSION["password"]){
+            
+            echo"Invalid username";
         }
         else{
-            echo"The username is not correct";
+            echo"Login faild";
         }
-
-        if( $password == $_SESSION["password"] ){
-        }
-        else{
-            echo"Password is not correct";
-        }
-
-        
          
     }
 
