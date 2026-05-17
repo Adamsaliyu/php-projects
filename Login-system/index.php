@@ -45,6 +45,9 @@ $_SESSION["password"] = 1234;
         elseif(empty($password)){
             echo"password is empty";
         }
+        else{
+            //login
+        }
 
         if($username == $_SESSION["username"]){
             echo"WELCOME {$username}" ."<br>" ;
