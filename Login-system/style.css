@@ -10,3 +10,21 @@
     min-height: 100vh;
     background-color: rgb(212, 207, 207);
 }
+
+.mid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background-color: rgb(31, 30, 30);
+    min-height: 350px;
+    width: 60%;
+    padding: 0px 40px;
+    
+}
+
+label {
+    color: hsl(0, 3%, 85%);
+    font-size: 18px;
+    font-weight: 500;
+}
