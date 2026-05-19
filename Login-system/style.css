@@ -8,7 +8,10 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(212, 207, 207);
+    background-image: url(image/neom-gOqBe7ropxM-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .mid-container {
@@ -17,8 +20,12 @@
     justify-content: center;
     align-self: center;
     background-color: rgb(31, 30, 30);
-    min-height: 350px;
-    width: 60%;
+    height: 500px;
+    width: 500px;
+    border: solid 1px white;
+    border-radius: 35px;
+    background: transparent;
+    backdrop-filter: blur(20px);
     padding: 0px 40px;
     
 }
@@ -27,4 +34,27 @@ label {
     color: hsl(0, 3%, 85%);
     font-size: 18px;
     font-weight: 500;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50%;
+    margin: auto;
+
+}
+
+input {
+    background: transparent;
+    border-bottom: solid 1px white;
+    height: 40px;
+    width: 100%;
+}
+
+#Submit-btn {
+    background-color: white;
+    padding: 14px 5px;
+    border: none;
+    border-radius: 10px;
 }
