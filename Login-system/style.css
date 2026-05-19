@@ -31,7 +31,7 @@
 }
 
 label {
-    color: hsl(0, 3%, 85%);
+    color: #0c160b;
     font-size: 18px;
     font-weight: 500;
 }
@@ -39,7 +39,6 @@ label {
 form {
     display: flex;
     flex-direction: column;
-    gap: 5px;
     width: 50%;
     margin: auto;
 
@@ -48,13 +47,31 @@ form {
 input {
     background: transparent;
     border-bottom: solid 1px white;
+    color: #0c160b;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
     height: 40px;
     width: 100%;
 }
 
 #Submit-btn {
-    background-color: white;
-    padding: 14px 5px;
+    background-color: #cfa990;
+    color: #0c160b;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 14px 7px;
+    text-align: center;
     border: none;
     border-radius: 10px;
+    transition: 0.3s;
+    height: 50px;
+}
+
+#Submit-btn:hover {
+    background-color: hsl(24, 60%, 90%);
+     font-size: 18px;
+    font-weight: 700;
 }
