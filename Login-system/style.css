@@ -32,7 +32,7 @@
 
 label {
     color: #0c160b;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -54,7 +54,14 @@ input {
     box-shadow: 5px 5px 10px black;
     height: 40px;
     width: 100%;
+    transition: 0.3s;
 }
+
+input:hover{
+    border-bottom: solid 5px #0c160b;
+    
+}
+
 
 #Submit-btn {
     background-color: #cfa990;
