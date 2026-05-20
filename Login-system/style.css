@@ -82,3 +82,17 @@ input:hover{
      font-size: 18px;
     font-weight: 700;
 }
+
+/* -------DASHBORD STYLE---------*/
+
+.dashbord-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(image/neom-gOqBe7ropxM-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
