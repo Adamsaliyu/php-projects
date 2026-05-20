@@ -1,7 +1,6 @@
 <?php
 session_start();
 $_SESSION["username"] = "muhammad";
-$_SESSION["logged_in"] = true; // now ----------------------------------------// 
 $password = 1234;
 $_SESSION["password"] = password_hash("1234", PASSWORD_DEFAULT);
 
@@ -52,7 +51,13 @@ $_SESSION["password"] = password_hash("1234", PASSWORD_DEFAULT);
             if($username == $_SESSION["username"] &&
             password_verify($password, $_SESSION["password"])){
 
-                echo"Login successful" ."<br>";
+                //SAVE SESSION
+                $_SESSION["username"] = $username;
+
+                //Redirect to next page
+                header("Location: dashboard.php");
+                exit();
+
             }
             else{
                 echo"invalid username or password";
