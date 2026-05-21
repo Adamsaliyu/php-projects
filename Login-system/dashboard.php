@@ -7,21 +7,8 @@
     <title>dashboard-page</title>
 </head>
 <body>
-    <div class="dashbord-container">
-        <div class="header">
-            <div class="left-header">
-                 <img src="" alt="">
-                <h3>NETMOVIE</h3>
-            </div>
-            <div class="right-header">
-                <a href="Home">Home</a>
-                <a href="About">About</a>
-            </div>
-
-        </div>
-        <div class="hero">
-
-        </div>
+    <div class="container">
+        <h1>WELCOME USER</h1>
     </div>
     
 </body>
