@@ -1,6 +1,7 @@
 <?php
 session_start();
 $_SESSION["username"] = "muhammad";
+$_SESSION["logged_in"] = true;
 $password = 1234;
 $_SESSION["password"] = password_hash("1234", PASSWORD_DEFAULT);
 
